@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	logger "gin_jenkins/log"
 	"gin_jenkins/score"
 
 	"github.com/golang/protobuf/proto"
@@ -43,4 +44,7 @@ func main() {
 
 	*score_info_1.Rating = 2000
 	fmt.Printf("after decode:{%s}\n", score_info_1.String())
+
+	ip,port, envConfig := "127.0.0.1", "3304","config"
+	logger.Infof("ip=%v, port=%v, e=%v", ip, port, envConfig)
 }
