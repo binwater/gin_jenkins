@@ -46,5 +46,5 @@ func main() {
 	fmt.Printf("after decode:{%s}\n", score_info_1.String())
 
 	ip,port, envConfig := "127.0.0.1", "3304","config"
-	logger.Infof("test ip=%v, port=%v, e=%v", ip, port, envConfig)
+	logger.Infof("test 111 ip=%v, port=%v, e=%v", ip, port, envConfig)
 }
